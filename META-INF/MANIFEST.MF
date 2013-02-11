@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OneTriangle
+Bundle-SymbolicName: name.wadewalker.OneTriangle;singleton:=true
+Bundle-Version: 1.0.0.0
+Bundle-Activator: name.wadewalker.onetriangle.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.jogamp.jogl
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

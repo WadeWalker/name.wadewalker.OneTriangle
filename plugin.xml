@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="name.wadewalker.onetriangle.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="name.wadewalker.onetriangle.Perspective"
+            id="name.wadewalker.onetriangle.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="name.wadewalker.onetriangle.OneTriangleView"
+            id="name.wadewalker.onetriangle.onetriangleview"
+            name="OneTriangleView"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="name.wadewalker.OneTriangle.application"
+            name="OneTriangle">
+         <property
+               name="appName"
+               value="OneTriangle">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
